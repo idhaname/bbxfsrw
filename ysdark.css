@@ -1,0 +1,56 @@
+.foot
+{
+    font-size: 75%;
+    text-align: center;
+}
+footer
+{
+    background-color: rgb(40, 40, 40);
+}
+.studioimg
+{
+    width: 16px;
+    height: 16px;
+}
+body
+{
+    font-size: 120%;
+    background-color: rgb(30, 30, 30);
+}
+a
+{
+    background-color: rgb(64, 64, 64);
+    color: rgb(86, 156, 214);
+    text-decoration: none;
+}
+.footerclearcss
+{
+    background-color: rgb(40, 40, 40);
+}
+h1
+{
+    color: rgb(232, 232, 232);
+}
+h2
+{
+    color: rgb(232, 232, 232);
+}
+h3
+{
+    color: rgb(232, 232, 232);
+}h4
+{
+    color: rgb(232, 232, 232);
+}
+h5
+{
+    color: rgb(232, 232, 232);
+}
+h6
+{
+    color: rgb(232, 232, 232);
+}
+p
+{
+    color: rgb(232, 232, 232);
+}
