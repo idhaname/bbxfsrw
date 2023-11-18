@@ -4,12 +4,35 @@
         <meta charset="utf-8">
         <title>烈焰盒子-崩坏星穹铁道导航 | 灵魂-烈焰之杖工作室</title>
         <Link Rel="SHORTCUT ICON" href="https://download.sblz.eu.org/assets/studio.png">
-        <link rel="stylesheet" href="yslight.css">
+        <link rel="stylesheet" href="ysdark.css">
+        <link rel="alternate stylesheet" type="text/css" title="Light" href="yslight.css" />
         <script>
             console.info("灵魂-烈焰之杖工作室")
             console.info("Soul-Blaze rod Studios")
             console.info("Powered by SBLZUI (M↓H5)")
             console.info("  [][]    [][][]    []      [][][]\n[]        []    []  []          []\n  [][]    [][][]    []        []  \n      []  []    []  []      []    \n[][][]    [][][]    [][][]  [][][]")
+        </script>
+        <script type="text/javascript">
+            //别看了，网上抄的
+            function setStyle(title) {
+                //预定义变量
+                var i, links;
+                //用DOM方法获得所有的link元素
+                links = document.getElementsByTagName("link");
+                for(i=0; links[i]; i++) {
+                    //判断此link元素的rel属性中是否有style关键字
+                    //即此link元素是否为样式表link
+                    //同时判断此link元素是否含有title属性
+                    if(links[i].getAttribute("rel").indexOf("style") != -1 && links[i].getAttribute("title")) {
+                        //先不管三七二十一把它设为disabled
+                        links[i].disabled = true;
+                        //再判断它的title中是否有我们指定的关键字
+                        if(links[i].getAttribute("title").indexOf(title) != -1)
+                        //如果有则将其激活
+                        links[i].disabled = false;
+                    }
+                }
+            }
         </script>
     </head>
     <body>
@@ -33,16 +56,19 @@
         -->
         <h2>软件下载</h2>
         <h3>游戏下载</h3>
-        <p>官方服务器：<a href="https://sr.mihoyo.com/"target="_blank">崩坏：星穹铁道官网 (官服)</a></p>
-        <p>渠道服务器：<a href="https://www.biligame.com/detail/?id=107800"target="_blank">崩坏：星穹铁道 - bilibili游戏中心 (B服)</a>&nbsp;&nbsp;&nbsp;<a href="https://www.biligame.com/detail/?id=108586"target="_blank">崩坏：星穹铁道（PC版） - bilibili游戏中心 (B服)</a></p>
-        <p>国际服务器：<a href="https://hsr.hoyoverse.com/"target="_blank">崩坏：星穹铁道官网 (国际服)</a></p>
+        <h4>国服</h4>
+        <p>星穹列车服务器：<a href="https://sr.mihoyo.com/"target="_blank">崩坏：星穹铁道官网 (官服)</a></p>
+        <p>无名客服务器：<a href="https://www.biligame.com/detail/?id=107800"target="_blank">崩坏：星穹铁道 - bilibili游戏中心 (B服)</a>&nbsp;&nbsp;&nbsp;<a href="https://www.biligame.com/detail/?id=108586"target="_blank">崩坏：星穹铁道（PC版） - bilibili游戏中心 (B服)</a></p>
+        <h4>国际服</h4>
+        <p>Asia(亚)、America(美)、Europe(欧)、TW/HK/MO(港澳台)服务器：<a href="https://hsr.hoyoverse.com/"target="_blank">崩坏：星穹铁道官网 (国际服)</a></p>
+        <p>Epic服务器：<a href="https://store.epicgames.com/zh-CN/p/honkai-star-rail"target="_blank">Epic商城 (Epic渠道服)</a></p>
         <footer>
             <p class="foot"><a href="https://gitlab.com/sblzsoft/bbxfsrw/-/blob/main/srupdlog.md"target="_blank"class="footerclearcss">更新日志</a>&nbsp;&nbsp;&nbsp;<a href="https://gitlab.com/sblzsoft/bbxfsrw/"target="_blank"class="footerclearcss">GitLab</a>&nbsp;&nbsp;&nbsp;Powered by SBLZUI (M↓H5)</br>
-            <a href="https://sblzsoft.github.io/bbxfsrw"target="_blank"class="footerclearcss">GitHub Pages</a>&nbsp;&nbsp;&nbsp;<a href="https://sr.sblz.eu.org/"target="_blank"class="footerclearcss">Cloudflare Pages</a></p>
+            <a href="https://sblzsoft.github.io/bbxfsrw"target="_blank"class="footerclearcss">GitHub Pages</a>&nbsp;&nbsp;&nbsp;<a href="https://sr.sblz.eu.org/"target="_blank"class="footerclearcss">Cloudflare Pages</a></p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;颜色模式热切换：<button id=light type="button" onclick="setStyle('Light');">浅色模式</button>&nbsp;&nbsp;&nbsp;<button id=dark type="button" onclick="setStyle('Dark');">深色模式</button></p>
             <p class="foot">建议使用屏幕分辨率为1024x768以上的平板或电脑访问本站。若使用手机，请将手机横屏。</br>
             不建议使用过时的浏览器访问。<a href="https://ys.sblz.eu.org/updatebrowser.html"target="_blank"class="footerclearcss">查看详情</a></p>
             <p class="foot"><img class="studioimg"src="https://download.sblz.eu.org/assets/studio.png">灵魂-烈焰之杖工作室 -- Soul-Blaze rod Studios</p>
         </footer>
-        <center><p><iframe id="adiframe" title="AD" scrolling="no" src="https://download.sblz.eu.org/sblzads.html" style="min-width:calc(95vw);max-height:calc(8vh);overflow:hidden;" framespacing="0" allowfullscreen="true"> </iframe></p></center>
+        <!--<center><p><iframe id="adiframe" title="AD" scrolling="no" src="https://download.sblz.eu.org/sblzads.html" style="min-width:calc(95vw);max-height:calc(8vh);overflow:hidden;" framespacing="0" allowfullscreen="true"> </iframe></p></center>-->
     </body>
 </html>

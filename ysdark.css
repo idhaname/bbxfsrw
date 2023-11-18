@@ -15,11 +15,11 @@ footer
 body
 {
     font-size: 120%;
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(31, 31, 31);
 }
 a
 {
-    background-color: rgb(64, 64, 64);
+    background-color: rgb(52, 58, 64);
     color: rgb(86, 156, 214);
     text-decoration: none;
 }
@@ -29,28 +29,29 @@ a
 }
 h1
 {
-    color: rgb(232, 232, 232);
+    color: rgb(204, 204, 204);
 }
 h2
 {
-    color: rgb(232, 232, 232);
+    color: rgb(204, 204, 204);
 }
 h3
 {
-    color: rgb(232, 232, 232);
-}h4
+    color: rgb(204, 204, 204);
+}
+h4
 {
-    color: rgb(232, 232, 232);
+    color: rgb(204, 204, 204);
 }
 h5
 {
-    color: rgb(232, 232, 232);
+    color: rgb(204, 204, 204);
 }
 h6
 {
-    color: rgb(232, 232, 232);
+    color: rgb(204, 204, 204);
 }
 p
 {
-    color: rgb(232, 232, 232);
+    color: rgb(204, 204, 204);
 }
